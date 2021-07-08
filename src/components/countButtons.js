@@ -9,7 +9,7 @@ setCounter(counter+props.increamentBy);
 }
 return(
 <div>
-  <button onclick={handleClick}>+{props.increamentBy}</button>
+  <button onClick={handleClick}>+{props.increamentBy}</button>
   <div>{counter}</div>
 </div>
 );
