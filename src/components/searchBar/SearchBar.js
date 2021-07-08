@@ -13,11 +13,14 @@ function handleClearClick(){
 setSearchValue("");
 }
 
+const shouldDisplay=searchValue.length>0;
+
   return(
      <div>
        <input type="text" value={searchValue} onChange={handleClickInput}/>
        <br/>
-<button onClick={handleClearClick}>Clear</button>
+<button type="text" >Search</button>
+{shouldDisplay && <button onClick={handleClearClick}>Clear</button>}
      </div>
   );
 }
