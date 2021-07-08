@@ -7,9 +7,15 @@ console.log(props);
 function handleClick(){
 setCounter(counter+props.increamentBy);
 }
+
+const styles={
+background:props.bgColor,
+color:#ffffff,
+}
+
 return(
 <div>
-  <button onClick={handleClick}>+{props.increamentBy}</button>
+  <button style={styles} onClick={handleClick}>+{props.increamentBy}</button>
   <div>{counter}</div>
 </div>
 );
