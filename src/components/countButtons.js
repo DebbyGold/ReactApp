@@ -10,7 +10,7 @@ setCounter(counter+props.increamentBy);
 
 const styles={
 background:props.bgColor,
-color:#ffffff,
+color:"#fff"
 }
 
 return(
