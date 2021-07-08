@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 
-export default function countButtons(props){
+export default function CountButtons(props){
 
   const [counter, setCounter]=useState(0);
 
