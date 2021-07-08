@@ -1,7 +1,7 @@
 import React,{useState} from "react";
+import "../styles/globalCss.css";
 
 export default function CountButtons(props){
-console.log(props);
   const [counter, setCounter]=useState(0);
 
 function handleClick(){
