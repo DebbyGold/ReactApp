@@ -1,26 +1,40 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./SearchBar.css";
 
-export default function SearchBar(){
+const product = [
+  "tooth paste",
+  "tooth brush",
+  "mouth wash",
+  "mouth guard",
+  "mouth flux"
+];
 
-  const [searchValue, setSearchValue]=useState("search goes here");
+export default function SearchBar() {
+  const [searchValue, setSearchValue] = useState("search goes here");
 
-function handleClickInput(event){
- setSearchValue(searchValue+event.target.value);
-}
+  function handleClickInput(event) {
+    setSearchValue(searchValue + event.target.value);
+  }
 
-function handleClearClick(){
-setSearchValue("");
-}
+  function handleClearClick() {
+    setSearchValue("");
+  }
 
-const shouldDisplay=searchValue.length>0;
+  const shouldDisplay = searchValue.length > 0;
 
-  return(
-     <div>
-       <input type="text" value={searchValue} onChange={handleClickInput}/>
-       <br/>
-<button type="text" >Search</button>
-{shouldDisplay && <button onClick={handleClearClick}>Clear</button>}
-     </div>
+  return (
+    <div>
+      <input type="text" value={searchValue} onChange={handleClickInput} />
+      <br />
+      <button type="text">Search</button>
+      {shouldDisplay && <button onClick={handleClearClick}>Clear</button>}
+
+      <ul>
+        const products.map((product) = { 
+          <li key={product}>{product}</li>
+          });
+          
+      </ul>
+    </div>
   );
 }
