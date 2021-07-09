@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
 
-const product = [
+const products = [
   "tooth paste",
   "tooth brush",
   "mouth wash",
@@ -30,10 +30,10 @@ export default function SearchBar() {
       {shouldDisplay && <button onClick={handleClearClick}>Clear</button>}
 
       <ul>
-        const products.map((product) = { 
-          <li key={product}>{product}</li>
-          });
-          
+        {products.map((product) => { 
+        return <li key={product}>{product}</li>
+        })
+      }
       </ul>
     </div>
   );
