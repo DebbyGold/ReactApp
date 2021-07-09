@@ -9,7 +9,7 @@ const products = [
   "mouth flux"
 ];
 
-export default function SearchBar() {
+export default function Search(props) {
   const [searchValue, setSearchValue] = useState("search goes here");
 
   function handleClickInput(event) {
@@ -22,15 +22,19 @@ export default function SearchBar() {
 
   const shouldDisplay = searchValue.length > 0;
 
+const productFilter = props.products.filter((product)=>{
+ return products.includes(searchValue);
+})
+
   return (
     <div>
       <input type="text" value={searchValue} onChange={handleClickInput} />
       <br />
       <button type="text">Search</button>
       {shouldDisplay && <button onClick={handleClearClick}>Clear</button>}
-
+productFilter
       <ul>
-        {products.map((product) => { 
+        {productFilter((product) => { 
         return <li key={product}>{product}</li>
         })
       }
