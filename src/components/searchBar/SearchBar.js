@@ -12,7 +12,7 @@ export default function SearchBar(props) {
     setSearchValue("");
   }
 
-  const shouldDisplay=searchValue.length > 0;
+  //const shouldDisplay=searchValue.length > 0;
 
 const productFiltered=props.products.filter((product)=>{
 return product.includes(searchValue)
@@ -23,7 +23,8 @@ return product.includes(searchValue)
     <div>
       <input type="text" value={searchValue} onChange={handleClickInput} />
       <br />
-      {shouldDisplay && <button onClick={handleClearClick}>Clear</button>}
+     {/*{shouldDisplay && */}
+      <button onClick={handleClearClick}>Clear</button>
      <ul>
         {productFiltered.map((product)=>{
       return <li key={product}>{product}</li>
