@@ -3,4 +3,10 @@ button{
 }
 input{
   margin-top:15px;
+border-radius: 25px;
+height:25px;
+background:#000;
+color:#fff;
+border-color: transparent;
+padding-left:15px;
 }
