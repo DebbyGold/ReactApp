@@ -15,9 +15,8 @@ export default function SearchBar(props) {
   //const shouldDisplay=searchValue.length > 0;
 
 const productFiltered=props.products.filter((product)=>{
-return product.includes(searchValue)
-}
-)
+return product.includes(searchValue);
+})
 
   return (
     <div>
