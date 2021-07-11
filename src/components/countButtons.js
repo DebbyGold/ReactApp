@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import "../styles/globalCss.css";
 
 export default function CountButtons(props){
@@ -12,6 +12,12 @@ const styles={
 background:props.bgColor,
 color:"#fff"
 }
+useEffect(()=>{
+if(counter === 10){
+alert("The counter is 10");
+}
+},[counter])
+
 
 return(
 <div>
