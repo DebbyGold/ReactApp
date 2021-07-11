@@ -17,7 +17,7 @@ export default function App() {
 "mouth guard"
 
       ]}/>
-<searchBar products={[
+<SearchBar products={[
 "motor bike",
 "power bike",
 "soccer ball"
