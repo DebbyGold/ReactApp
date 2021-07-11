@@ -28,8 +28,8 @@ return product.includes(searchValue);
         {productFiltered.map((product)=>{
       return <li key={product}>{product}</li>
         })
-    }
-     </ul>
-    </div>
+      }
+    </ul>
+</div>
   );
   }
