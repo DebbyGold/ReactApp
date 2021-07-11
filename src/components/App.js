@@ -1,6 +1,7 @@
 import "../styles.css";
 import CountButtons from "../components/countButtons";
 import SearchBar from "../components/searchBar/SearchBar";
+import Button from "../components/Button/Button";
 import React, {useState,useEffect} from "react";
 
 
@@ -22,6 +23,7 @@ setProductState(newProductState);
 
   return (
     <div className="App">
+<Button />
       <h1>Counter</h1>
       <CountButtons increamentBy={2} bgColor={"blue"}/>
 <h2>Search items in thelists lists</h2>
